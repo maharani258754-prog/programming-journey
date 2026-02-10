@@ -1,0 +1,31 @@
+/* Selector Universal */
+* {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+/* Selector Tag */
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+/* Selector Class */
+.teks {
+    color: green;
+    font-weight: bold;
+}
+
+/* Selector ID */
+#judul {
+    color: red;
+    text-align: center;
+}
+
+/* Tambahan agar lebih jelas */
+.tombol {
+    background-color: orange;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
