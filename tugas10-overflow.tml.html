@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Produk</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+nav{
+    text-align: center;
+    margin: 10px;
+}
+
+nav a{
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: coral;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+article{
+    width: 300px;
+    height: 120px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Overflow berbeda */
+.article1{
+    overflow: visible;
+}
+
+.article2{
+    overflow: hidden;
+}
+
+.article3{
+    overflow: scroll;
+}
+
+.article4{
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Toko Produk Fashion</h1>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Product</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+<article class="article1">
+<h3>Produk 1 - Tas Stylish</h3>
+Tas stylish ini cocok digunakan oleh anak muda yang ingin tampil modern dan fashionable setiap hari. Tas ini dibuat dari bahan berkualitas yang kuat dan tahan lama sehingga dapat digunakan dalam berbagai aktivitas seperti sekolah, jalan-jalan, maupun traveling. Desainnya yang sederhana namun elegan membuat tas ini sangat diminati.
+</article>
+
+<article class="article2">
+<h3>Produk 2 - Sepatu Sport</h3>
+Sepatu sport ini dirancang untuk memberikan kenyamanan maksimal saat digunakan. Dengan bahan yang ringan dan sol yang kuat, sepatu ini sangat cocok untuk olahraga, berjalan jauh, ataupun aktivitas sehari-hari. Modelnya yang kekinian membuat penggunanya terlihat lebih percaya diri dan tetap stylish.
+</article>
+
+<article class="article3">
+<h3>Produk 3 - Jaket Trendy</h3>
+Jaket trendy ini memiliki desain yang sangat menarik dan cocok dipakai oleh remaja maupun orang dewasa. Bahan jaket ini hangat namun tetap nyaman dipakai dalam berbagai cuaca. Jaket ini juga memiliki banyak pilihan warna sehingga dapat disesuaikan dengan gaya berpakaian pengguna.
+</article>
+
+<article class="article4">
+<h3>Produk 4 - Topi Casual</h3>
+Topi casual ini sangat cocok digunakan untuk melengkapi penampilan sehari-hari. Dengan bahan yang ringan dan nyaman, topi ini dapat melindungi kepala dari sinar matahari sekaligus membuat penampilan terlihat lebih keren. Topi ini banyak dipakai saat jalan santai, liburan, atau aktivitas luar ruangan.
+</article>
+
+</div>
+
+</body>
+</html>
