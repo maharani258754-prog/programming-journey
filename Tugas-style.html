@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Gaming & Aksesoris</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            font-family: Arial, sans-serif;
+        }
+
+        /* JUDUL */
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        nav ul {
+            background: darkorange;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            padding: 15px 20px;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            background: red;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* DROPDOWN */
+        .dropdown {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background: orange;
+            display: none;
+            flex-direction: column;
+            min-width: 150px;
+        }
+
+        .dropdown li {
+            padding: 10px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Toko Gaming & Aksesoris</h2>
+    <p>Selamat datang di toko online terbaik kami!</p>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <a href="#">About</a>
+                <ul class="dropdown">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Products</a>
+                <ul class="dropdown">
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Keyboard</a></li>
+                    <li><a href="#">Mouse</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+                <ul class="dropdown">
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Keyboard">
+        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Mouse">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Setup">
+    </div>
+
+</body>
+</html>
