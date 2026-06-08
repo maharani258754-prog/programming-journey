@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Toko Baju</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      min-height: 100vh;
+      background: linear-gradient(to right,#cbb7f5,#ffc5d3);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      padding: 40px 70px;
+    }
+
+    nav a{
+      text-decoration: none;
+      color: black;
+      font-size: 22px;
+    }
+
+    .garis{
+      width: 490px;
+      height: 3px;
+      background: white;
+      margin-left: -560px;
+      margin-top: 70px;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 70px;
+    }
+
+    /* PRODUK */
+
+    .produk{
+      width: 55%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 45px;
+    }
+
+    .card{
+      width: 290px;
+    }
+    .card img{
+      width: 100%;
+      height: 255px;
+      object-fit: cover;
+      background: white;
+    }
+
+    .harga{
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .bawah{
+      margin-left: 260px;
+    }
+
+    /* TEXT KANAN */
+    .hero{
+      width: 40%;
+      padding-top: 40px;
+    }
+
+    .hero h1{
+      font-size: 92px;
+      line-height: 90px;
+      font-weight: bold;
+    }
+
+    .hero p{
+      margin-top: 140px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    /* GARIS BAWAH */
+
+    .bawah-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 40px;
+    }
+
+    .bawah-text hr{
+      width: 160px;
+      border: 1px solid white;
+    }
+
+    .dot{
+      width: 15px;
+      height: 15px;
+      background: #4da8da;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    /* HIASAN */
+
+    .hiasan1{
+      position: absolute;
+      top: 0;
+      right: 120px;
+      width: 80px;
+      opacity: 0.6;
+    }
+
+    .hiasan2{
+      position: absolute;
+      right: 20px;
+      top: 0;
+      width: 160px;
+      opacity: 0.2;
+    }
+    .bunga{
+      position: absolute;
+      left: -120px;
+      bottom: -50px;
+      width: 500px;
+      opacity: 0.1;
+    }
+
+    @media(max-width: 900px){
+
+      .container{
+        flex-direction: column;
+      }
+
+      .produk{
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero{
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .hero h1{
+        font-size: 60px;
+        line-height: 65px;
+      }
+
+      .bawah{
+        margin-left: 0;
+      }
+
+      .garis{
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HIASAN -->
+  <img class="hiasan1" src="https://cdn-icons-png.flaticon.com/512/32/32339.png">
+  <img class="hiasan2" src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+
+  <!-- NAVBAR -->
+  <nav>
+
+    <a href="#">🏠</a>
+    <a href="#">home</a>
+    <a href="produk.html">Produk</a>
+
+    <div class="garis"></div>=+s
+
+  </nav>
+
+  <!-- CONTAINER -->
+  <div class="container">
+
+    <!-- PRODUK -->
+    <div class="produk">
+
+      <div class="card">
+        <img src="c:\Users\ADVAN\Downloads\BIRU  2026-05-08 at 19.50.08.jpeg">
+        <div class="harga">Rp 250.000</div>
+      </div>
+
+      <div class="card">
+        <img src="c:\Users\ADVAN\Downloads\PINK BIRU 2026-05-08 at 19.50.08 (1).jpeg">
+        <div class="harga">Rp 199.000</div>
+      </div>
+
+      <div class="card bawah">
+        <img src="c:\Users\ADVAN\Downloads\WhatsApp Image 2026-05-08 at 19.50.08 (2).jpeg">
+        <div class="harga">Rp 248.000</div>
+      </div>
+
+    </div>
+
+    <!-- TEXT -->
+    <div class="hero">
+
+      <h1>
+        Aplikasi <br>
+        Toko Baju
+      </h1>
+
+      <p>Selamat datang</p>
+
+      <div class="bawah-text">
+
+        <hr>
+
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+
+        <hr>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
